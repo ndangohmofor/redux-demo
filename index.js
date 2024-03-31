@@ -1,3 +1,6 @@
+const redux = require("redux");
+const createStore = redux.createStore();
+
 const BUY_CAKE = "BUY_CAKE";
 
 function buyCake() {
@@ -24,3 +27,5 @@ const reducer = (state = initialState, action) => {
       return state;
   }
 };
+
+const store = createStore(reducer);
